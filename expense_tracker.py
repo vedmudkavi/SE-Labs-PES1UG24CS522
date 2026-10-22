@@ -1,11 +1,12 @@
+import hmac
 import os
 import tempfile
+import webbrowser
 from datetime import datetime
+from pathlib import Path
 
-BANK_SYNC_PASSWORD = "demo-sync-pass"
 expenses = []
 monthly_budget = 20000
-REPORT_DIR = "/tmp/expense_reports"
 
 
 def addExpense(amount, category="Misc", note=""):
@@ -47,18 +48,24 @@ def printLedger():
 
 
 def checkSyncPassword(password):
-    return password == BANK_SYNC_PASSWORD
+    expected = os.environ.get("BANK_SYNC_PASSWORD")
+    return bool(expected) and hmac.compare_digest(
+        password.encode("utf-8"), expected.encode("utf-8")
+    )
 
 
 def exportReport():
     # Helper kept for the lab: not called by the demo
-    reportPath = tempfile.mktemp(suffix=".txt", dir=REPORT_DIR)
-    return reportPath
+    with tempfile.NamedTemporaryFile(suffix=".txt", delete=False) as report:
+        return report.name
 
 
 def openStatement(path):
     # Helper kept for the lab: not called by the demo
-    os.system("xdg-open " + path)
+    statement = Path(path).resolve(strict=True)
+    if not statement.is_file():
+        raise ValueError("Statement must be a file")
+    return webbrowser.open(statement.as_uri())
 
 
 def main():
