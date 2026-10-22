@@ -1,0 +1,11 @@
+test_demo_output_matches_original_even_on_second_run (test_expense_tracker.ExpenseTrackerTests.test_demo_output_matches_original_even_on_second_run) ... ok
+test_password_configuration (test_expense_tracker.ExpenseTrackerTests.test_password_configuration) ... ok
+test_report_files_are_created_and_unique (test_expense_tracker.ExpenseTrackerTests.test_report_files_are_created_and_unique) ... ok
+test_statement_path_is_passed_as_a_file_uri (test_expense_tracker.ExpenseTrackerTests.test_statement_path_is_passed_as_a_file_uri) ... ok
+test_totals_budget_and_invalid_amounts (test_expense_tracker.ExpenseTrackerTests.test_totals_budget_and_invalid_amounts) ... ok
+test_trackers_do_not_share_state (test_expense_tracker.ExpenseTrackerTests.test_trackers_do_not_share_state) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.011s
+
+OK
