@@ -22,3 +22,33 @@ python -m coverage report -m
 ![Code coverage results](code_coverage.png)
 
 Figure 1: All 15 tests passed, achieving 100% statement coverage (38 statements, zero missed).
+
+## Branch coverage
+
+The branch suite retains the line-coverage cases and adds empty lists, lower-severity alerts,
+equal-severity alerts, and a list containing only `none`. The lower/equal cases exercise the
+false outcome of the comparison that decides whether to update the worst alert.
+
+All 19 tests pass. All 38 statements and 28 branches are covered, with zero partial branches:
+100% line coverage and 100% branch coverage. The terminal `Cover` column in branch mode
+combines statement and branch coverage; it is not a separate branch-only percentage.
+
+Run from this `Lab-6` directory:
+
+```bash
+python -m coverage run --branch --source=weather_alert -m pytest BranchCoverageTest_weather_alert_application.py
+python -m coverage report -m
+```
+
+![Branch coverage results](branch_coverage.png)
+
+Figure 2: All 19 tests passed, achieving 100% coverage with 28 branches and zero partial branches.
+
+Line coverage checks whether statements execute; branch coverage also checks the different
+outcomes of decisions. Full coverage is evidence of execution, not a guarantee of correctness.
+
+## Submission
+
+The code-coverage test file and screenshot are in the first Lab 06 commit.
+The branch-coverage test file and screenshot are in the second Lab 06 commit.
+Run the named test files explicitly: their handout-required names do not match pytest's default discovery pattern.
