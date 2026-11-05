@@ -65,6 +65,7 @@ Name: Ved Mudkavi
 | [expense_tracker.py](expense_tracker.py) | Cleaned expense tracker implementation |
 | [issues.md](issues.md) | Analysis findings, fixes, and original line references |
 | [test_expense_tracker.py](test_expense_tracker.py) | Regression checks for the fixes |
+| [TESTING.md](TESTING.md) | How to run the six regression tests from this repository |
 | [reports/before/](reports/before/) | Analysis and demo output before the fixes |
 | [reports/after/](reports/after/) | Analysis, demo, and test output after the fixes |
 | [reports/tool_versions.txt](reports/tool_versions.txt) | Versions used for the saved analysis reports |
