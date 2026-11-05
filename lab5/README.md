@@ -58,6 +58,18 @@ Be ready to explain the bugs you found and how you fixed them. You may be called
 
 Name: Ved Mudkavi
 
+### Submitted files
+
+| File or folder | Purpose |
+| --- | --- |
+| [expense_tracker.py](expense_tracker.py) | Cleaned expense tracker implementation |
+| [issues.md](issues.md) | Analysis findings, fixes, and original line references |
+| [test_expense_tracker.py](test_expense_tracker.py) | Regression checks for the fixes |
+| [reports/before/](reports/before/) | Analysis and demo output before the fixes |
+| [reports/after/](reports/after/) | Analysis, demo, and test output after the fixes |
+| [reports/tool_versions.txt](reports/tool_versions.txt) | Versions used for the saved analysis reports |
+| [requirements-dev.txt](requirements-dev.txt) | Development tool dependencies |
+
 ### Source and commit history
 
 These deliverables come from [L5_32_expense_tracker](https://github.com/vedmudkavi/L5_32_expense_tracker).
