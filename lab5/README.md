@@ -58,6 +58,17 @@ Be ready to explain the bugs you found and how you fixed them. You may be called
 
 Name: Ved Mudkavi
 
+### Source and commit history
+
+These deliverables come from [L5_32_expense_tracker](https://github.com/vedmudkavi/L5_32_expense_tracker).
+The original history is preserved in this repository, including these commits by Ved Mudkavi:
+
+- [Fix Bandit security issues in expense tracker](https://github.com/vedmudkavi/SE-Labs-PES1UG24CS522/commit/b4fcc16782c6081762e823b64d9168e3d712010e)
+- [Fix Pylint warnings and organize tracker state](https://github.com/vedmudkavi/SE-Labs-PES1UG24CS522/commit/b07857412dcfc466aa1202ea1be7924f34437f73)
+- [Fix Flake8 formatting and add lab reports](https://github.com/vedmudkavi/SE-Labs-PES1UG24CS522/commit/cb1c5d7844faaea9708a330af096fc2e755389e0)
+
+The original commits use paths at the source repository's root; the submitted files here are under `lab5/`.
+
 The cleaned program, issue table, and before/after reports are included here.
 Reflection is omitted from this submission.
 
